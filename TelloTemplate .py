@@ -47,7 +47,7 @@ recvThread.start()
 print("\nAvonlea Thalmann")
 print("Program Name: Square")
 print("Date: 2.6.2024 ")
-print("Drone WIFI = DD78")
+print("Drone WIFI = DEC5")
 print("\n****CHECK YOUR TELLO WIFI ADDRESS****")
 print("\n****CHECK SURROUNDING AREA BEFORE FLIGHT****")
 ready = input('\nAre you ready to take flight: ')
@@ -60,9 +60,24 @@ try:
         sendmsg('command', 0)
         sendmsg('takeoff')
 
-        sendmsg('up 150', 5)
-        sendmsg('forward 200')
-        sendmsg('ccw 360')
+     # Square - Pilot = Avonlea Thalmann - CoPilot = Jensen Muday
+        sendmsg('forward 100', )
+        sendmsg('cw 90')
+        sendmsg('forward 100')
+        sendmsg('cw 90')
+        sendmsg('forward 100')
+        sendmsg('cw 90')
+        sendmsg('forward 100')
+        sendmsg('cw 90',)
+
+
+
+
+
+     # Triangle - Pilot = Jensen Muday - CoPilot = Avonlea Thalmann
+
+
+     # Circle - Pilot = Avonlea Thalmann - CoPilot = Jensen Muday
 
         sendmsg('land')
 
@@ -70,6 +85,7 @@ try:
 
     else:
         print('\nMake sure you check WIFI, surroundings, co-pilot is ready, re-run program\n')
+
 except KeyboardInterrupt:
     sendmsg('emergency')
 
