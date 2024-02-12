@@ -69,17 +69,18 @@ try:
         sendmsg('cw 90')
         sendmsg('forward 100')
         sendmsg('cw 90',)
-        '''
+        
 
 
 
-
+    
      # Triangle - Pilot = Jensen Muday - CoPilot = Avonlea Thalmann
         for i in range (3):
             sendmsg('forward 80', 10)
             sendmsg('cw 120', 10)
-
+    '''
      # Circle - Pilot = Avonlea Thalmann - CoPilot = Jensen Muday
+        sendmsg('curve 25, -25, 0, 25, -75, 0, 30')
 
         sendmsg('land')
 
