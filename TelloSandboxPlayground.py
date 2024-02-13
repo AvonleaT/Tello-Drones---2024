@@ -56,7 +56,7 @@ try:
         sendmsg('command',0)
         sendmsg('battery?', 0)
         sendmsg('takeoff')
-        '''
+
      # Square - Pilot = Avonlea Thalmann - CoPilot = Jensen Muday
         sendmsg('forward 100', )
         sendmsg('cw 90')
@@ -75,7 +75,7 @@ try:
         for i in range (3):
             sendmsg('forward 80', 10)
             sendmsg('cw 120', 10)
-    '''
+    
         # Circle - Pilot = Avonlea Thalmann - CoPilot = Jensen Muday
         sendmsg('curve 100, 100, 0, 100, 0, 0, 50', 8)
         sendmsg('curve -100, -100, 0, -100, 0, 0, 50')
