@@ -58,9 +58,11 @@ try:
 
         sendmsg('command', 0)
         sendmsg('takeoff')
+        sendmsg('battery?')
 
-        # Review the (SDK) Software Development Kit resource for Drone Commands
-        # Delete these comments before writing your program
+        sendmsg('up 7', 6)
+        sendmsg('forward 250', 6)
+        sendmsg('up 70', 6)
 
         sendmsg('land')
 
