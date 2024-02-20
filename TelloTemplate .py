@@ -82,6 +82,9 @@ try:
      # Circle - Pilot = Avonlea Thalmann - CoPilot = Jensen Muday
         sendmsg('curve 25, -25, 0, 25, -75, 0, 30')
 
+    #Jump
+
+
         sendmsg('land')
 
         print('\nGreat Flight!!!')
