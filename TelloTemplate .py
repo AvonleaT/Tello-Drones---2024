@@ -52,6 +52,8 @@ print("\n****CHECK SURROUNDING AREA BEFORE FLIGHT****")
 ready = input('\nAre you ready to take flight: ')
 
 
+
+
 try:
     if ready.lower() == 'yes':
         print("\nStarting Drone!\n")
@@ -60,9 +62,11 @@ try:
         sendmsg('takeoff')
         sendmsg('battery?')
 
-        sendmsg('up 7', 6)
-        sendmsg('forward 250', 6)
-        sendmsg('up 70', 6)
+        sendmsg('up 12', 0)
+        sendmsg('forward 240', 8)
+        sendmsg('ccw 10', 8)
+        sendmsg('go 230, 0, 45, 50', 6)
+
 
         sendmsg('land')
 
