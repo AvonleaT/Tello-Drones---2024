@@ -65,8 +65,8 @@ try:
         sendmsg('up 12', 0)
         sendmsg('forward 240', 8)
         sendmsg('ccw 10', 8)
-        sendmsg('go 230, 0, 45, 50', 6)
-
+        sendmsg('go 230, 0, 45, 50', 8)
+        sendmsg('curve -100, -100, 0, -100, 0, 0, 50')
 
         sendmsg('land')
 
